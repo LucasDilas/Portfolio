@@ -1,0 +1,168 @@
+
+:root {
+    --apple-gray: #f5f5f7;
+    --apple-dark: #1d1d1f;
+    --apple-blue: #0071e3;
+    --apple-text: #86868b;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    color: var(--apple-dark);
+    line-height: 1.5;
+    background-color: #fff;
+}
+
+h1, h2, h3, h4 {
+    font-weight: 600;
+}
+
+.section {
+    padding: 6rem 0;
+}
+
+.section-gray {
+    background-color: var(--apple-gray);
+}
+
+.hero {
+    padding: 8rem 0;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    color: #86868b;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.intro {
+    text-align: center;
+    padding: 6rem 0;
+}
+
+.intro h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.intro p {
+    max-width: 800px;
+    margin: 0 auto;
+    color: var(--apple-text);
+    font-size: 1.25rem;
+}
+
+.project {
+    padding: 5rem 0;
+    border-bottom: 1px solid #d2d2d7;
+}
+
+.project:last-child {
+    border-bottom: none;
+}
+
+.project h3 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.project-image {
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.12);
+}
+
+.project-image img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.project-image:hover img {
+    transform: scale(1.02);
+}
+
+.project-description {
+    padding: 1rem 0;
+}
+
+.btn-apple {
+    background-color: var(--apple-blue);
+    color: #fff;
+    border-radius: 980px;
+    padding: 0.75rem 2rem;
+    font-size: 1.1rem;
+    border: none;
+    transition: all 0.2s ease;
+}
+
+.btn-apple:hover {
+    background-color: #0077ED;
+    color: #fff;
+    transform: scale(1.02);
+}
+
+footer {
+    background-color: var(--apple-gray);
+    padding: 4rem 0;
+}
+
+.contact-info {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.contact-item {
+    margin: 1.5rem 0;
+    color: var(--apple-text);
+}
+
+.contact-item i {
+    color: var(--apple-blue);
+    margin-right: 0.5rem;
+    font-size: 1.2rem;
+}
+
+.nav-link {
+    color: #fff;
+    margin: 0 1rem;
+    font-weight: 400;
+    transition: opacity 0.2s;
+}
+
+.nav-link:hover {
+    opacity: 0.7;
+    color: #fff;
+}
+
+.navbar {
+    background-color: rgba(0, 0, 0, 0.8);
+    backdrop-filter: saturate(180%) blur(20px);
+}
+
+.nav-pills .nav-link.active {
+    background-color: transparent;
+    color: var(--apple-blue);
+}
+
+.animate-on-scroll {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
